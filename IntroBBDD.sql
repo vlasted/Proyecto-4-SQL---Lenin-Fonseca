@@ -42,6 +42,8 @@ GROUP BY city
 HAVING COUNT(*) > 1;
 
 -- Consulta 7
+-- En esta versión de la base demo el código del avión no está en flights,
+-- sino en routes, por eso se usa un JOIN entre flights y routes mediante route_no.
 
 SELECT r.airplane_code, COUNT(*) AS numero_vuelos
 FROM bookings.flights f
