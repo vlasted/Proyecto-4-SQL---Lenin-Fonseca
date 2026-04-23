@@ -22,6 +22,12 @@ SELECT *
 FROM airplanes_data;
 
 -- Consulta 4
+-- El enunciado pide Boeing 737 con código de modelo 733.
+-- En esta versión small de la base demo no existe ese código, por lo que la consulta devuelve 0 filas. Solo hay un modelo Boieng 737 MAX 7 con codigo de modelo 7M7.
+
+SELECT flight_id
+FROM flights
+WHERE aircraft_code = '733';
 
 
 -- Consulta 5
