@@ -16,7 +16,10 @@ WHERE total_amount > 1000000;
 
 
 -- Consulta 3
+-- Se hace \encoding para que la tabla aparezca en caracteres legibles.
 
+SELECT *
+FROM airplanes_data;
 
 -- Consulta 4
 
