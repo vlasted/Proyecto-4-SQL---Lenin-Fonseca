@@ -14,7 +14,6 @@ SELECT *
 FROM bookings
 WHERE total_amount > 1000000;
 
-
 -- Consulta 3
 -- Se hace \encoding para que la tabla aparezca en caracteres legibles.
 
@@ -28,6 +27,5 @@ FROM airplanes_data;
 SELECT flight_id
 FROM flights
 WHERE aircraft_code = '733';
-
 
 -- Consulta 5
