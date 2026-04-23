@@ -29,3 +29,15 @@ FROM flights
 WHERE aircraft_code = '733';
 
 -- Consulta 5
+
+SELECT *
+FROM bookings.tickets
+WHERE passenger_name ILIKE 'Irina%';
+
+-- Consulta 6
+
+-- Consulta 7
+
+-- Consulta 8
+
+-- Consulta 9
