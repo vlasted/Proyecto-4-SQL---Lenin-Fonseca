@@ -36,6 +36,11 @@ WHERE passenger_name ILIKE 'Irina%';
 
 -- Consulta 6
 
+SELECT city, COUNT(*) AS numero_aeropuertos
+FROM bookings.airports_data
+GROUP BY city
+HAVING COUNT(*) > 1;
+
 -- Consulta 7
 
 -- Consulta 8
