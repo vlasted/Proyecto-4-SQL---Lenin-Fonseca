@@ -43,6 +43,13 @@ HAVING COUNT(*) > 1;
 
 -- Consulta 7
 
+SELECT r.airplane_code, COUNT(*) AS numero_vuelos
+FROM bookings.flights f
+JOIN bookings.routes r
+  ON f.route_no = r.route_no
+GROUP BY r.airplane_code
+ORDER BY numero_vuelos DESC;
+
 -- Consulta 8
 
 -- Consulta 9
