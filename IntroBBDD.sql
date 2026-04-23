@@ -54,4 +54,15 @@ ORDER BY numero_vuelos DESC;
 
 -- Consulta 8
 
+SELECT book_ref, COUNT(*) AS numero_billetes
+FROM bookings.tickets
+GROUP BY book_ref
+HAVING COUNT(*) > 1
+ORDER BY numero_billetes DESC;
+
 -- Consulta 9
+
+SELECT flight_id, scheduled_departure, actual_departure
+FROM bookings.flights
+WHERE actual_departure IS NOT NULL
+  AND actual_departure - scheduled_departure > INTERVAL '1 hour';
