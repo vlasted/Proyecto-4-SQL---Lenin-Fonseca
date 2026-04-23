@@ -2,7 +2,9 @@
 -- Autor: Lenin Fonseca
 
 -- Consulta 1
-
+SELECT flight_id, status
+FROM flights
+WHERE status = 'On Time';
 
 -- Consulta 2
 
